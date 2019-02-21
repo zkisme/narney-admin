@@ -6,7 +6,7 @@
 
 <script>
 import '../statics/normalize.css'
-import './index.scss'
+import './index.less'
 export default {
   name: 'app',
   components: {
@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 
 </style>
 
