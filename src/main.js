@@ -17,9 +17,12 @@ const axios = Axios.create({
   baseURL: '/api',
   methods: 'post'
 })
+axios.interceptors.response.use(function(response){
+  return response.data
+}, function(error) {
+  return Promise.reject(error)
+})
 Vue.use(VueAxios, axios)
-
-
 
 new Vue({
   router,
